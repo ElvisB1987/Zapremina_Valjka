@@ -1,8 +1,10 @@
 var numberA = prompt('vrednost_1');
-var numberB = prompt('vrednost_2');
+
 var operacija = prompt('operacija');
 
-function sum(a, b, unesenaOperacija) {
+var numberB = prompt('vrednost_2');
+
+function sum(a, unesenaOperacija, b) {
     switch (unesenaOperacija) {
         case '+':
             document.write("Rezultat je " + (parseInt(a) + parseInt(b)))
@@ -21,4 +23,4 @@ function sum(a, b, unesenaOperacija) {
             break;
     }
 
-} sum(numberA, numberB, operacija)
+} sum(numberA, operacija, numberB)
